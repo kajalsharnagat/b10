@@ -10,3 +10,5 @@ def func(a, b, c):
 
 res = func(10,20, 30)
 print(res)
+
+print("h")
