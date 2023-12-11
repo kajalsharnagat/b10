@@ -17,3 +17,7 @@ application = get_wsgi_application()
 
 # for i in range(1,13):
     #  print(i)
+
+# second day - for testing 
+# a = [1, 2, 3, 4]
+# print(a)    
