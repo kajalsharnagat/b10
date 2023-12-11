@@ -199,3 +199,5 @@ gas = FuelType.objects.get(name = "Gas")
 
 # c180.fueltype.clear()
 
+# f4 = FuelType.objects.get(name="lithium battery")              ##for testing 
+# f5 = FuelType.objects.get(name="water")   
