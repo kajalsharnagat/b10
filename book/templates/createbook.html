@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add a New Book</title>
+</head>
+
+<body>
+    {% block content %}
+
+    <h2>New Book</h2><hr>
+    <form method="post" action="{% url 'add_book' %}">
+        {% csrf_token %}
+        <label>ID:</label>
+        <input type="number" name="id" value="{{book.id}}" readonly><br><br>
+
+        <label>Title:</label>
+        <input type="text" name="title" placeholder="Enter title" value="{{book.title}}" required><br><br>
+
+        <label>Author:</label>
+        <input type="text" name="auth" value="{{book.author}}" required><br><br>
+
+        <label>Publication Date:</label>
+        <input type="date" name="pub_date" value="{{book.publication_date|date:'Y-m-d'}}" required><br><br>
+        
+        Price: <input type="number" name="prc" value="{{book.price}}" required><br><br>
+
+        Publication: 
+        <select name="publication_name">
+            {% for choice_value, choice_label in Book.PUBLICATION_CHOICE %}
+                {{choice_value}}
+            {% endfor %}
+        </select><br>
+
+        <!-- Publication:
+        <select name="publication_name">
+            {% for choice_value, choice_label in Book.PUBLICATION_CHOICE %}
+               <option value="{{ choice_value }}" {% if book.publication_name == choice_value %}selected{% endif %}>{{ choice_label }}</option>
+            {% endfor %}
+        </select><br> -->
+
+        {% if book.id %}
+            <button type="submit" class="btn btn-primary">Update Book</button>
+        {% else %}
+            <button type="submit" class="btn btn-primary">Add Book</button>
+        {% endif %}
+
+    </form><br>
+    <a class="btn btn-primary" href="{% url 'home' %}">Home</a>
+
+    {% endblock %}
+
+
+</body>
+
+</html>

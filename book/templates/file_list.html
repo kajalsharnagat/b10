@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>File List</title>
+</head>
+<body>
+    <h2>File List</h2>
+    {% for file in all_files %}
+        <p>{{ file.name }}</p>
+        <strong>File URL:</strong> <a href="{{ file.uploaded_file.url }}" target="_blank">{{ file.name }}</a>
+    {% endfor %}
+</body>
+</html>

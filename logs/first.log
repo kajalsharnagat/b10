@@ -1,0 +1,14 @@
+In Homepage view
+all_books
+In Homepage view
+all_books
+<QueryDict: {}>
+<QueryDict: {'csrfmiddlewaretoken': ['Du1zt0FEE8ymVO1imVjWutXBIPwXw78R4s6XUHsFKEExR6uxa6EyWgF5TqemkSRo'], 'id': [''], 'title': ['book66'], 'auth': ['auth66'], 'pub_date': ['2023-11-22'], 'prc': ['765']}>
+In Homepage view
+all_books
+[2023-12-09 16:20:37] INFO In Homepage view
+[2023-12-09 16:20:37] INFO all_books
+[2023-12-09 16:21:40] INFO <QueryDict: {}>
+[2023-12-09 16:21:55] INFO <QueryDict: {'csrfmiddlewaretoken': ['MzRBlDFE1hg0uWT0WJwhbWQgga9pP7FEdxWZMksF7NmbqemfKURTDJyKrLRODSob'], 'id': [''], 'title': ['book88'], 'auth': ['auth88'], 'pub_date': ['2023-11-08'], 'prc': ['233']}>
+[2023-12-09 16:21:55] INFO In Homepage view
+[2023-12-09 16:21:55] INFO all_books
